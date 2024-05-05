@@ -6,10 +6,10 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #dfd4c0   ;
-  --secondary-color: #efe6d4 ;
-  --accent1-color: #575350;
-  --accent2-color: #c9bca2;
+  --primary-color: #DFDFDAFF   ;
+  --secondary-color: #EFEFE9FF ;
+  --accent1-color: #595959FF;
+  --accent2-color: #3B3B3BFF;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Kdam Thmor Pro", sans-serif;
