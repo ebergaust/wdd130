@@ -1,0 +1,16 @@
+.logo-img{
+    width: 100px;
+}
+.first-menu a:link, .first-menu a:visited{
+    color: #2c2c2c;
+}
+#hero-banner{
+    width:100%;
+    background-image: url('../images/eclipse_swoosh.png'); /*put image in html because you can use an alt tag in css*/
+    height: 100px;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+#hero-image{
+    display: none;
+}
