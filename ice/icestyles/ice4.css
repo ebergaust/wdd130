@@ -1,0 +1,27 @@
+body{
+    background-color:steelblue;
+}
+.title{
+    color: black;
+}
+main section{
+    color: white;
+    text-align: center;
+}
+.list{
+    font-size: 20px;
+    width: 30%;
+    margin: auto;
+}
+.imagenquote{
+    text-align: center;
+}
+
+blockquote{
+    margin: auto;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    width: 20%;
+    padding: 2%;
+}
