@@ -9,7 +9,7 @@ header{
 }
 
 .logo-img{
-    width: 5%;
+    width: 80px;
     margin: 1%;
 }
 
@@ -64,6 +64,16 @@ header{
     margin: auto;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+.background{
+    background-color: #EFEFE9FF;
+    max-width: 1600px;
+    height: 100px;
+}
+
+.back-img{
+    height: 200px;
 }
 
 footer{
