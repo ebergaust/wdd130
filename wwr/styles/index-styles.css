@@ -28,17 +28,23 @@ body{
 
 header{
     background-color: #2c2c2c;
+    display: grid;
+    grid-template-columns: 150px auto;
+    
 }
 
 .logo-img{
     width: 80px;
-    margin: 1% 100% 1% 1%;
+    margin: auto;
     border-radius: 70%;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 .menu-link a:hover{
-    background-color: #2c2c2c;
-    color: #EFEFE9FF;
+    background-color: #EFEFE9FF;
+    color: #2c2c2c;
     padding:1em;
     min-width: 120px;
     text-decoration: none;
@@ -46,35 +52,57 @@ header{
 }
 
 .menu-link a{
-    background-color: #EFEFE9FF;
+    background-color: #2c2c2c;
     text-align: center;
     padding:1em;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
-    color: #2c2c2c;
+    color: #EFEFE9FF;
 }
 .menu-link{
-    background-color: #EFEFE9FF;
+    background-color: #2c2c2c;
     text-align: center;
     padding:1em;
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
 }
   
 #hero-banner{
-    background-color: #EFEFE9FF;
-    color: #2c2c2c;
-    background-image: url('../images/landscape-sea-forest-boat-lake-view-1004355-pxhere.com.jpg');
     margin: auto;
-    width: 25%;
-    padding: 15%;
-    text-size-adjust: 12%;
+    max-width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    margin-top: -100px; 
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    color: #EFEFE9FF;
+    font-size: 200%;
 }
 
 #hero-image{
-    display: none;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    width: 100%;
+    
 }
 
 .card img{
