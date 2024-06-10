@@ -97,6 +97,11 @@ header{
     color: #EFEFE9FF;
     text-shadow: 5px 5px 10px #000000;
     font-size: 200%;
+    text-decoration:none;
+}
+
+#hero-msg a{
+    color: #2c2c2c;
 }
 
 #hero-image{
