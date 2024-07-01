@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+h1{
+    font-weight: 900;
+}
+
+h2{
+    color: cornflowerblue;
+    font-size: 100%;
+}
+
+.card{
+    width: 99%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.img{
+    width: 100%;
+    border-radius: 5% 5% 0% 0%;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.block1{
+    grid-column: 1/2;
+}
+
+.block2{
+    grid-column: 2/3;
+}
+
+.block3{
+    grid-column: 3/4;
+}
