@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link type="text/css" rel="stylesheet" href="styles/contactus-styles.css">
+</head>
+<body>
+
+<header>
+    <a id="logo_link" href="https://ebergaust.github.io/wdd130/index.html">
+        <img class="logo-img" src="images/eclipse_swoosh.png" alt="Dry Oar Logo">
+    </a>
+    <nav class="menu-link">
+
+            <a href="index.html" target="_blank">Home</a>
+            <a href="deals.html" target="_blank">Deals</a>
+            <a href="bookings.html" target="_blank">Book Now</a>
+            <a href="contacts.html" target="_blank">Contact Us</a>
+            <a href="faq.html" target="_blank">FAQ</a>
+    </nav>
+</header>
+
+<div id="hero-banner">
+    <div id="hero-box">
+        <img id="hero-image" src="images/landscape-sea-forest-boat-lake-view-1004355-pxhere.com.jpg" alt="skybox">
+    </div>
+    <section id="hero-msg">
+        <h1 class="home-title">Are YOU Ready for Fun</h1>
+        <h4>I know I am</h4>
+        <div class="button-box">
+            <a class="book" href="rates.html" target="_blank">Book Now</a>
+        </div>
+    </section>
+</div>
+
+<main>
+    <form id="form" action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+        <div id="feedback"></div>
+      </form>
+   
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</main>
+           
+<footer>
+    <div class="footer-card">
+        <h2>Dry Oar © 2024 Erik Bergaust</h2>
+        <a href="learnmore.html" target="_blank">Learn More</a>
+        <a href="https://ebergaust.github.io/wdd130/wwr/site-plan-rafting.html" target="_blank">Cite PLan</a>
+        <a href="contacts.html" target="_blank">Contact Us</a>
+        <p>Last Modified: 7/2/2024</p>
+    </div>
+</footer>
+
+</body>
+</html>
